@@ -8,7 +8,7 @@ var island [][]int = [][]int{
 	{0, 0, 1, 0, 1, 0}, // 2
 	{1, 1, 0, 0, 1, 0}, // 3
 	{1, 0, 1, 1, 0, 0}, // 4
-	{1, 0, 0, 0, 0, 1}, // 5
+	{1, 0, 0, 0, 0, 1}, // 2
 
 }
 
@@ -41,7 +41,7 @@ func removeIslands(arr [][]int) {
 
 	for i := 0; i < n; i++ {
 		for j := 0; j < m; j++ {
-			if arr[i][j] == 5 {
+			if arr[i][j] == 2 {
 				arr[i][j] = 1
 			} else if arr[i][j] == 1 {
 				arr[i][j] = 0
@@ -68,7 +68,7 @@ func visitAndMark(arr [][]int, x int, y int) {
 
 	// Mark the border if it's 1
 	if arr[x][y] == 1 {
-		arr[x][y] = 5
+		arr[x][y] = 2
 		visitAndMark(arr, x, y+1)
 		visitAndMark(arr, x, y-1)
 		visitAndMark(arr, x+1, y)
