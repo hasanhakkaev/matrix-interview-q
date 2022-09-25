@@ -1,9 +1,10 @@
+// Package main for matrix question
 package main
 
 import "fmt"
 
-var island [][]int = [][]int{
-	{1, 0, 0, 0, 0, 0}, // 0
+var island = [][]int{
+	{1, 0, 0, 0, 0, 1}, // 0
 	{0, 1, 0, 1, 1, 1}, // 1
 	{0, 0, 1, 0, 1, 0}, // 2
 	{1, 1, 0, 0, 1, 0}, // 3
