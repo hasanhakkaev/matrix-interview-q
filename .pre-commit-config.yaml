@@ -66,12 +66,6 @@ repos:
     -   id: go-fumpt-repo   # replaces go-fmt-repo
     -   id: go-imports      # replaces go-fmt
     -   id: go-imports-repo # replaces go-fmt-repo
-    -   id: go-returns      # replaces go-imports & go-fmt
-    -   id: go-returns-repo # replaces go-imports-repo & go-fmt-repo
-    #
-    # Style Checkers
-    #
-    -   id: go-lint
     -   id: go-critic
     #
     # GolangCI-Lint
